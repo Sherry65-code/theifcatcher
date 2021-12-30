@@ -4,7 +4,7 @@ pygame.init()
 def playSound(filename):
     pygame.mixer.music.load(filename)
     pygame.mixer.music.play()
-cam = cv2.VideoCapture(2)
+cam = cv2.VideoCapture(0)
 # cam = cv2.VideoCapture(0)
 while cam.isOpened():
     ret, frame1 = cam.read()
